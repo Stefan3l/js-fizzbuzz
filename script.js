@@ -16,13 +16,21 @@
 // 3 - per i multipli di 5 stampi "Buzz"
 // 4 - per i numeri multipli di 3 e di 5 stampi "FizzBuzz"
 
-for ( i = 1; i <= 100; i++) {
-    console.log(i);
+for (i = 1; i <= 100; i++) {
 
-    if ( i % 3) {
-        console.log(`Fizz`)
+    if (i % 3 == 0 && i % 5 == 0) {
+        console.log(`FizzBuzz`)
     }
     
-    else if ( i % 5)
+    else if (i % 3 == 0) {
+        console.log(`Fizz`)
+    }
+
+    else if (i % 5 == 0) {
         console.log(`Buzz`)
+    }    
+    else {
+        console.log(i);
+    }
 }
+   
